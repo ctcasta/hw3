@@ -251,5 +251,5 @@ kable(comparison.table, col.names = c("1970-1990", "1991-2015"),
 
 
 
-###rm(list = setdiff(ls(), c("tax.change.plot", "tax.price.plot", "top.5.plot", "bot.5.plot", "comparison.plot", "model.a", "ivs.a", "first.stage.a", "reduced.form.a", "model.b", "ivs.b", "first.stage.b", "reduced.form.b", "comparison.table")))
-###save.image("submission_1/hwk3_workspace.RData")
+rm(list = setdiff(ls(), c("tax.change.plot", "tax.price.plot", "top.5.plot", "bot.5.plot", "comparison.plot", "model.a", "ivs.a", "first.stage.a", "reduced.form.a", "model.b", "ivs.b", "first.stage.b", "reduced.form.b", "comparison.table")))
+save.image("submission1/hwk3_workspace.RData")
