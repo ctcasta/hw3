@@ -6,7 +6,7 @@ final.data.q1 <- final.data %>%
   filter(Year <= 1985) %>%
   arrange(state, Year) %>%
   group_by(state) %>%
-  mutate(tax_change = if_else(is.na(lag(tax_dollar)) | tax_dollar != lag(tax_dollar), 1, 0)) %>%
+  mutate(tax_change = if_else(is.na(lag(tax_state)) | tax_state != lag(tax_state), 1, 0)) %>%
   ungroup()
 
 tax.change.proportion <- final.data.q1 %>%
@@ -176,7 +176,7 @@ final.data.70.90 <- final.data.70.90 %>%
          log_price = log(price_cpi),
          log_total_tax = log(tax_dollar))
 
-### run regression using feols 
+### run regression 
 library(fixest)
 ivs.a <- feols(log_sales ~ 1 | log_price ~ log_total_tax, data = final.data.70.90)
 summary(ivs.a)
@@ -194,7 +194,7 @@ summary(reduced.form.a)
 
 
 
-
+## Same questions but looking at year range 1991-2015
 #### 1991-2015 
 final.data.91.15 <- final.data %>%
   filter(Year >= 1991 & Year <= 2015)
@@ -234,6 +234,8 @@ reduced.form.b <- lm(log_sales ~ log_total_tax, data = final.data.91.15)
 summary(reduced.form.b) 
 
 
+# 9 interpretation 
+
 # 10 Comparison 
 coef.a <- coef(ivs.a)
 coef.b <- coef(ivs.b)  
@@ -246,7 +248,7 @@ comparison.table <- data.frame(
 library(knitr)
 rownames(comparison.table) <- "Slope Elasticity"
 kable(comparison.table, col.names = c("1970-1990", "1991-2015"), 
-      caption = "Comparison of Elasticiy for 1970-1990 and 1991-2015", 
+      caption = "Elasticity Comparison for 1970-1990 and 1991-2015", 
       format = "markdown", align = "c")
 
 
