@@ -142,7 +142,7 @@ rf.summary.a
 
 
 
-# The following is focused on data from the years 1991-2015 
+## 9. The following repeats questions 6-8 but is focused on data from the years 1991-2015 
 
 ## 6.2
 
