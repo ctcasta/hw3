@@ -242,7 +242,7 @@ comparison.table <- data.frame(
   "1970-1990" = coef.a["fit_log_price"],
   "1991-2015" = coef.b["fit_log_price"])
 
-### create a nice table 
+
 library(knitr)
 rownames(comparison.table) <- "Slope Elasticity"
 kable(comparison.table, col.names = c("1970-1990", "1991-2015"), 

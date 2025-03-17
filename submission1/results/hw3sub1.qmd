@@ -34,7 +34,7 @@ load("hwk3_workspace.RData")
 ```
 
 
-\newpage 
+
 
 ## 1. Present a bar graph showing the proportion of states with a change in their cigarette tax in each year from 1970 to 1985.
 
@@ -46,7 +46,7 @@ print(tax.change.plot)
 ```
 
 
-\newpage 
+
 
 ## 2. Plot on a single graph the average tax (in 2012 dollars) on cigarettes and the average price of a pack of cigarettes from 1970 to 2018.
 
@@ -58,7 +58,7 @@ print(tax.price.plot)
 ```
 
 
-\newpage 
+
 
 ## 3. Identify the 5 states with the highest increases in cigarette prices (in dollars) over the time period. Plot the average number of packs sold per capita for those states from 1970 to 2018.
 
@@ -70,7 +70,7 @@ print(top.5.plot)
 ```
 
 
-\newpage 
+
 
 ## 4. Identify the 5 states with the lowest increases in cigarette prices over the time period. Plot the average number of packs sold per capita for those states from 1970 to 2018.
 
@@ -82,7 +82,7 @@ print(bot.5.plot)
 ```
 
 
-\newpage 
+
 
 ## 5. Compare the trends in sales from the 5 states with the highest price increases to those with the lowest price increases.
 
@@ -94,7 +94,7 @@ print(comparison.plot)
 ```
 
 
-\newpage 
+
 
 # The following is focused on data from the years 1970-1990
 
@@ -111,7 +111,7 @@ model.a.summary
 ```
 
 
-\newpage 
+
 
 ## 7. Regress log sales on log prices using the total (federal and state) cigarette tax (in dollars) as an instrument for log prices. Interpret your results and compare your estimates to those without an instrument. Are they different? If so, why?
 
@@ -124,7 +124,7 @@ ivs.a.summary
 ```
 
 
-\newpage 
+
 
 ## 8. Show the first stage and reduced-form results from the instrument.
 
@@ -140,7 +140,7 @@ rf.summary.a
 ```
 
 
-\newpage 
+
 
 # The following is focused on data from the years 1991-2015 
 
@@ -155,7 +155,7 @@ model.b.summary
 ```
 
 
-\newpage 
+
 
 ## 7.2 
 
@@ -168,7 +168,7 @@ ivs.b.summary
 ```
 
 
-\newpage 
+
 
 ## 8.2
 
@@ -184,7 +184,7 @@ rf.summary.b
 ```
 
 
-\newpage 
+
 
 ## 10. Compare your elasticity estimates from 1970-1990 versus those from 1991-2015. Are they different? If so, why? 
 
