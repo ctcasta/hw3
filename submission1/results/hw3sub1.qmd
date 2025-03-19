@@ -29,8 +29,9 @@ Here is a link to my repository: {https://github.com/ctcasta/hw3}
 #| include: false
 #| eval: true
 
-setwd("/Users/camilacastaneda/Downloads/Econ-470/hw3/submission1/results/hwk3_workspace.Rdata")
-load("hwk3_workspace.RData")
+getwd()
+load("/Users/camilacastaneda/Downloads/Econ-470/hw3/submission1/results/hwk3_workspace.Rdata")
+
 ```
 
 
